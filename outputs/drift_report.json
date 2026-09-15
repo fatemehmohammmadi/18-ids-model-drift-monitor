@@ -1,0 +1,25 @@
+{
+  "baseline_attack_rate": 0.015,
+  "windows": {
+    "week1": {
+      "pred_attack_rate": 0.0175,
+      "pred_rate_shift": 0.0025,
+      "feature_psi": {
+        "src_bytes": 0.0221,
+        "failed_logins": 0.0002,
+        "same_srv_rate": 0.0064
+      },
+      "drift_alert": false
+    },
+    "week2": {
+      "pred_attack_rate": 0.8213,
+      "pred_rate_shift": 0.8063,
+      "feature_psi": {
+        "src_bytes": 13.0562,
+        "failed_logins": 2.467,
+        "same_srv_rate": 0.039
+      },
+      "drift_alert": true
+    }
+  }
+}

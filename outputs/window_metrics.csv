@@ -1,0 +1,3 @@
+window,psi_src_bytes,psi_failed_logins,psi_same_srv_rate,pred_rate,drift_alert
+week1,0.0221,0.0002,0.0064,0.0175,False
+week2,13.0562,2.467,0.039,0.82125,True
