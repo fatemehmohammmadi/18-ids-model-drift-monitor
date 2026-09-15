@@ -16,6 +16,8 @@ FEATS = ["src_bytes", "failed_logins", "same_srv_rate"]
 
 
 def psi(expected: np.ndarray, actual: np.ndarray, bins: int = 10) -> float:
+    # population stability index vs the baseline window
+    # (+eps so empty bins don't nuke the log)
     qs = np.linspace(0, 100, bins + 1)
     cuts = np.unique(np.percentile(expected, qs))
     if len(cuts) < 3:
